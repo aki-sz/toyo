@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="レイヤー_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+	 y="0px" width="320px" height="320.004px" viewBox="0 0 320 320.004" enable-background="new 0 0 320 320.004"
+	 xml:space="preserve">
+<path fill="#EE7A1C" d="M247.859,320H72.14C32.297,320,0,287.701,0,247.859V72.141C0,32.299,32.297,0,72.14,0h175.719
+	C287.702,0,320,32.299,320,72.141v175.719C320,287.701,287.702,320,247.859,320"/>
+<path fill="#FFFFFF" d="M241.117,203.63c0,7.468-6.109,13.577-13.577,13.577H92.459c-7.468,0-13.577-6.109-13.577-13.577v-87.26
+	c0-7.468,6.109-13.577,13.577-13.577h135.08c7.468,0,13.577,6.109,13.577,13.577V203.63z"/>
+<g>
+	<defs>
+		<path id="SVGID_1_" d="M241.117,203.63c0,7.468-6.109,13.577-13.577,13.577H92.459c-7.468,0-13.577-6.109-13.577-13.577v-87.26
+			c0-7.468,6.109-13.577,13.577-13.577h135.08c7.468,0,13.577,6.109,13.577,13.577V203.63z"/>
+	</defs>
+	<clipPath id="SVGID_2_">
+		<use xlink:href="#SVGID_1_"  overflow="visible"/>
+	</clipPath>
+	<polygon clip-path="url(#SVGID_2_)" fill="#7B5544" points="159.836,178.271 76.275,105.351 80.739,100.235 159.845,169.269 
+		239.265,100.231 243.719,105.354 	"/>
+</g>
+</svg>

@@ -1,0 +1,104 @@
+@charset "utf-8";
+
+/* 症状一覧 */
+#syoujou_wrapper {
+	background: #FFFBE6;
+	height: 130vh;
+}
+
+#syoujou_contents {
+	width: 78%;
+	margin: 0 auto;
+	padding-top: 4vh;
+}
+
+#syoujou_contents h2 {
+	font-size: 2.2rem;
+}
+
+#syoujou_body_box {
+	display: flex;
+	justify-content: space-between;
+	width: 80%;
+	height: 95vh;
+	margin: 3% auto;
+}
+
+.dot_syoujou {
+	display: flex;
+	align-items: center;
+	height: fit-content;
+}
+
+.square_point {
+	margin-right: 2%;
+}
+
+.dot_syoujou h3 {
+	font-size: 1.8rem;
+	text-wrap: nowrap;
+}
+
+#syoujou_text {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	gap: 7%;
+}
+
+#syoujou_text p {
+	font-size: 1.2rem;
+	margin-top: 1%;
+}
+
+#body {
+	height: 100%;
+}
+
+#body img {
+	height: 100%;
+}
+
+/* ぜひご来院ください */
+#kaizen_tedasuke {
+	height: 65vh;
+	display: flex;
+}
+
+#kaizen_text_bg {
+	width: 65vw;
+	background: #7B5544;
+	color: white;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+#image_kaizen {
+	width: 35vw;
+	background-image: url(../images/syoujou/kaizen_tedasuke.jpg);
+	background-size: 140%;
+	background-position: 35%, 0;
+}
+
+#kaizen_text {
+	width: 51vw;
+	margin-bottom: 5%;
+}
+
+#kaizen_text h3 {
+	font-size: 1.8rem;
+	margin-bottom: 7%;
+}
+
+.kaizen_description {
+	font-size: 1.2rem;
+}
+
+#sejutu_button_top {
+	background: #FF811A;
+	padding: 2%;
+	border-radius: 10px;
+	align-self: center;
+}
