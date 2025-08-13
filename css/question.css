@@ -62,11 +62,17 @@ html {
 	top: 25%;
 }
 
-.answer {
+.answer_sticker {
 	width: 48vw;
-	margin-bottom: 60vh;
+	height: 100vh;
+	padding-bottom: 20vh;
 }
 
+.answer {
+	width: 48vw;
+	position: sticky;
+	top: 25%;
+}
 .answer:last-child {
 	margin-bottom: 0;
 }
