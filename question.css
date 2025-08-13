@@ -1,0 +1,102 @@
+@charset "utf-8";
+
+html {
+  scroll-padding-top: 23vh;
+}
+
+/* 質問 */
+#question {
+	background: #FFFBE6;
+}
+
+#question_wrapper {
+	width: 75vw;
+	margin: 0 auto;
+}
+
+#question_wrapper h2 {
+	font-size: 1.4rem;
+	padding: 3% 0 3%;
+}
+
+.point_and_koumoku_q {
+	display: flex;
+	align-items: center;
+	margin-bottom: 2%;
+}
+
+.square_point {
+	margin-right: 2%;
+}
+
+#ichiran_and_mark {
+	border: 2px solid #7B5544;
+	border-radius: 50px;
+	width: 60vw;
+	margin: 0 auto 15%;
+	padding: 4%;
+	display: flex;
+	justify-content: space-around;
+}
+
+#question_ichiran {
+	font-size: 1.1rem;
+	text-wrap: nowrap;
+}
+
+#question_mark {
+	width: 10vw;
+	align-self: center;
+}
+
+#answers {
+	display: flex;
+	justify-content: space-between;
+	align-items:flex-start;
+	padding-bottom: 17%;
+}
+
+#inchou_clear {
+	width: 23vw;
+	position: sticky;
+	top: 25%;
+}
+
+.answer_sticker {
+	width: 48vw;
+	height: 100vh;
+	padding-bottom: 20vh;
+}
+
+.answer {
+	width: 48vw;
+	position: sticky;
+	top: 25%;
+}
+.answer:last-child {
+	margin-bottom: 0;
+}
+
+.answer h3 {
+	font-size: 2rem;
+	margin-bottom: 6%;
+	line-height: 2.5rem;
+}
+
+.answer a:hover {
+	text-decoration: none;
+}
+
+
+.answer_text {
+	font-size: 1.1rem;
+	margin-bottom: 6%;
+}
+
+.back {
+	color: white;
+	background: #7B5544;
+	border-radius: 10px;
+	width: fit-content;
+	padding: 2%;
+}
