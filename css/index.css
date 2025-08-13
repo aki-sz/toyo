@@ -42,7 +42,6 @@ main {
 
 /* このようなお悩みは～改善のカギ */
 #onayami {
-	height: 250vh;
 	width: 100%;
 	background: linear-gradient(#7B5544 39%, #FFFBE6 53%);
 }
@@ -105,6 +104,7 @@ main {
 
 #kaizen_text {
 	width: 50vw;
+	padding-bottom: 10%;
 }
 
 #kaizen h3 {
@@ -118,7 +118,6 @@ main {
 
 /* お腹ほぐし整体解説 */
 #onakahogushi {
-	height: 95vh;
 	display: flex;
 }
 
@@ -130,6 +129,7 @@ main {
 	flex-direction: column;
 	justify-content: center;
 	align-items: flex-end;
+	padding: 5% 0 5%;
 }
 
 #image_sejutsu {
@@ -153,17 +153,9 @@ main {
 	font-size: 1.2rem;
 }
 
-#sejutu_button_top {
-	background: #FF811A;
-	padding: 2%;
-	border-radius: 10px;
-	align-self: center;
-}
-
 /* 医師推薦&メディア紹介 */
 
 #doctor_media {
-	height: 200vh;
 	background: #FFFBE6;
 }
 
@@ -239,10 +231,11 @@ main {
 }
 
 #media_syoukai {
-	margin: 13% auto;
+	margin: 13% auto 0;
 	display: flex;
 	justify-content: space-between;
 	width: 80vw;
+	padding-bottom: 5%;
 }
 
 #media_text {
@@ -302,7 +295,6 @@ main {
 
 /* 予約誘導 */
 #top_reservation {
-	height: 95vh;
 	background: #7B5544;
 	color: white;
 	display: flex;
@@ -320,6 +312,7 @@ main {
 	flex-direction: column;
 	justify-content: center;
 	margin: 0 auto;
+		padding: 5% 0 5%;
 }
 
 #goryoukin {
@@ -337,6 +330,10 @@ main {
 	margin-bottom: 2%;
 }
 
+#zeikomi_syokai {
+	font-size: 1.8rem;
+}
+
 #tsuujouji {
 	font-size: 1.1rem;
 }
@@ -349,6 +346,10 @@ main {
 #nikaime {
 	font-size: 1.8rem;
 	margin-bottom: 6%;
+}
+
+#zeikomi_nikaime {
+	font-size: 1.2rem;
 }
 
 #top_goyoyaku {

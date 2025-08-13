@@ -29,6 +29,10 @@ ul {
 	min-height: 100vh;
 }
 
+a:hover {
+	text-decoration: underline;
+}
+
 /* ヘッダー */
 
 header {
@@ -126,7 +130,7 @@ header {
 
 /* フッター */
 footer {
-	height: 45vh;
+	height: 40vh;
 	background: #FFFBE6;
 }
 
@@ -230,6 +234,23 @@ footer {
 
 /* 見出し */
 h3 {
-	font-size: 2.5rem;
+	font-size: 2.4rem;
 	width: fit-content;
+}
+
+/* 茶色の線（ページの背景がベージュで終わる時） */
+#border_brown {
+	border-bottom: 2px solid #7B5544;
+}
+
+/* 詳しくはこちらボタン */
+#sejutsu_button {
+	background: #FF811A;
+	padding: 2%;
+	border-radius: 10px;
+	align-self: center;
+}
+
+#sejutsu_button:hover {
+	text-decoration: none;
 }

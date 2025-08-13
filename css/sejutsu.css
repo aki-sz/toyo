@@ -9,15 +9,16 @@
 	margin: 0 auto;
 	display: flex;
 	justify-content: space-between;
-	height: 88vh;
+	height: 73vh;
 }
 
 #sejutsu_box:nth-of-type(2n) {
 	flex-direction: row-reverse;
 }
 
-#sejutsu_box:nth-of-type(2),#sejutsu_box:nth-of-type(3) {
-	height: 70vh;
+#sejutsu_box:nth-of-type(2),
+#sejutsu_box:nth-of-type(3) {
+	height: 55vh;
 }
 
 .sejutsu_section {
@@ -69,4 +70,185 @@
 /* 料金 */
 #ryoukin {
 	background: #7B5544;
+	display: flex;
+	flex-direction: column;
+	padding: 10% 0 8%;
+}
+
+.ryoukin_box {
+	color: white;
+	display: flex;
+	justify-content: space-between;
+	margin: 0 auto;
+	margin-left: 9%;
+	width: 85vw;
+}
+
+.ryoukin_box:nth-of-type(2n) {
+	flex-direction: row-reverse;
+	margin-top: 10%;
+}
+
+.ryoukin_image {
+	width: 35vw;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin: 0 auto;
+	position: relative;
+}
+
+.ryoukin_image p {
+	width: 100%;
+	position: relative;
+	z-index: 100;
+}
+
+#box_image_ryoukin_border_one {
+	width: 35vw;
+	aspect-ratio: 1500 / 1021;
+	z-index: 80;
+	bottom: 7%;
+	right: 5%;
+	position: absolute;
+	border: 3px white solid;
+}
+
+#box_image_ryoukin_border_two {
+	width: 35vw;
+	aspect-ratio: 1500 / 1021;
+	z-index: 80;
+	bottom: 14%;
+	right: 10%;
+	position: absolute;
+	border: 3px white solid;
+}
+
+#box_image_goyoyaku_border_one {
+	width: 35vw;
+	aspect-ratio: 1500 / 1001;
+	z-index: 80;
+	bottom: 7%;
+	right: 5%;
+	position: absolute;
+	border: 3px white solid;
+}
+
+#box_image_goyoyaku_border_two {
+	width: 35vw;
+	aspect-ratio: 1500 / 1001;
+	z-index: 80;
+	bottom: 14%;
+	right: 10%;
+	position: absolute;
+	border: 3px white solid;
+}
+
+.ryoukin_text {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin: 0 auto;
+}
+
+#goryoukin {
+	background: white;
+	color: #7B5544;
+	padding: 2%;
+	margin-bottom: 6%;
+}
+
+#hp_karano {
+	font-size: 1.5rem;
+}
+
+#syokai_ryoukin {
+	margin-bottom: 2%;
+}
+
+#zeikomi_syokai {
+	font-size: 1.8rem;
+}
+
+#tsuujouji {
+	font-size: 1.1rem;
+}
+
+#hp_mita {
+	font-size: 1.5rem;
+	margin-bottom: 6%;
+}
+
+#nikaime {
+	font-size: 1.8rem;
+	margin-bottom: 6%;
+}
+
+#zeikomi_nikaime {
+	font-size: 1.2rem;
+}
+
+#goyoyaku_kata {
+	margin-bottom: 7%;
+}
+
+.point_and_koumoku {
+	display: flex;
+	align-items: center;
+	height: fit-content;
+	margin-bottom: 9%;
+}
+
+.square_point {
+	margin-right: 4%;
+}
+
+.goyoyaku_koumoku {
+	font-size: 1.2rem;
+	text-wrap: nowrap;
+}
+
+/* 必ずお読みください */
+#kanarazu {
+	background: #FFFBE6;
+	padding: 5% 0 5%;
+}
+
+#kanarazu_wrapper {
+	width: 80vw;
+	margin: 0 auto;
+}
+
+#kanarazu_wrapper h3 {
+	margin-bottom: 4%;
+}
+
+#kanarazu_text_box {
+	display: flex;
+	justify-content: space-between;
+	margin: 0 auto;
+}
+
+.kanarazu_text h4 {
+	font-size: 1.8rem;
+	margin-bottom: 8%;
+}
+
+.point_and_koumoku_kanarazu {
+	display: flex;
+	align-items: center;
+	margin-bottom: 6%;
+}
+
+.point_and_koumoku_kanarazu:last-child {
+	margin-bottom: 0;
+}
+
+.square_point {
+	margin-right: 2%;
+}
+
+.kanarazu_koumoku {
+	font-size: 1.2rem;
+	text-wrap: nowrap;
 }
