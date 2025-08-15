@@ -59,11 +59,11 @@ header {
 	width: 55vw;
 	margin: 0 auto;
 	font-family: "Klee One";
-	font-size: clamp(0.7rem, 1.2vw, 1.2rem);
+	font-size: clamp(0.7rem, 1.5vw, 1.2rem);
 }
 
 #header_logo {
-	width: 16vw;
+	width: 15vw;
 }
 
 #navigation_row {
