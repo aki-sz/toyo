@@ -1,10 +1,6 @@
 @charset "utf-8";
 
 /* 症状一覧 */
-#syoujou_wrapper {
-	background: #FFFBE6;
-}
-
 #syoujou_contents {
 	width: 78%;
 	margin: 0 auto;
@@ -19,21 +15,15 @@
 	display: flex;
 	justify-content: space-between;
 	width: 80%;
-	height: 90vh;
+	height: 75vh;
 	margin: 3% auto 0;
-}
-
-.dot_syoujou {
-	display: flex;
-	align-items: center;
-	height: fit-content;
 }
 
 .square_point {
 	margin-right: 2%;
 }
 
-.dot_syoujou h3 {
+.dot_text h3 {
 	font-size: 1.8rem;
 	text-wrap: nowrap;
 }
@@ -45,7 +35,7 @@
 }
 
 #syoujou_text p {
-	font-size: 1.2rem;
+	font-size: clamp(1.1rem, 1.3vw, 1.2rem);
 	margin-top: 1%;
 }
 
@@ -64,13 +54,11 @@
 
 #kaizen_text_bg {
 	width: 65vw;
-	background: #7B5544;
-	color: white;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	padding: 5% 0 5%;
+	padding: 6% 0 6%;
 }
 
 #image_kaizen {
@@ -86,10 +74,10 @@
 }
 
 #kaizen_text h3 {
-	font-size: 1.8rem;
+	font-size: 1.6rem;
 	margin-bottom: 7%;
 }
 
 .kaizen_description {
-	font-size: 1.2rem;
+	font-size: 1.1rem;
 }

@@ -1,0 +1,53 @@
+@charset "utf-8";
+
+/* お客様の声 */
+#okyakusama_wrapper {
+	width: 70vw;
+	margin: 0 auto;
+}
+
+#kansou {
+	margin-top: 2%;
+	margin-bottom: 2%;
+}
+
+.koe {
+	display: flex;
+	gap: 12%;
+	margin-bottom: 15%;
+}
+
+.gazou_box {
+	position: relative;
+}
+
+.koe_gazou {
+	width: 18vw;
+	position: relative;
+	z-index: 100;
+}
+
+.koe_text h3 {
+	font-size: 1.6rem;
+	line-height: 2.3rem;
+}
+
+.name_koe {
+	font-family: "Klee One";
+	font-size: 1.1rem;
+	margin-top: 1%;
+	margin-bottom: 2%;
+}
+
+.koe_shitsumon {
+	font-size: 1.2rem;
+	margin-bottom: 1%;
+}
+
+.koe_q_a {
+	margin-bottom: 7%;
+}
+
+.koe_q_a:last-child{
+	margin-bottom: 0;
+}

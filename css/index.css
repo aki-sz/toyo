@@ -5,11 +5,21 @@ main {
 }
 
 /* トップ画像 */
+#top_eyecatch {
+	position: relative;
+}
+
 #top_image {
 	background-image: url(../images/top01.jpg);
-	height: 84vh;
+	height: 87vh;
 	background-size: cover;
 	background-position: 0, 100%;
+}
+
+@media (min-height: 768px) {
+	#top_image {
+		height: 55vh;
+	}
 }
 
 #top_text {
@@ -17,7 +27,7 @@ main {
 }
 
 #top_text h2 {
-	font-size: 2.9rem;
+	font-size: clamp(2.4rem, 3.3vw, 2.9rem);
 	position: absolute;
 	top: 74%;
 	left: 6%;
@@ -26,7 +36,7 @@ main {
 }
 
 #top_text h1 {
-	font-size: 2.3rem;
+	font-size: clamp(1.8rem, 2.7vw, 2.3rem);
 	position: absolute;
 	top: 85%;
 	left: 37%;
@@ -123,8 +133,6 @@ main {
 
 #onaka_text_bg {
 	width: 65vw;
-	background: #7B5544;
-	color: white;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -154,11 +162,6 @@ main {
 }
 
 /* 医師推薦&メディア紹介 */
-
-#doctor_media {
-	background: #FFFBE6;
-}
-
 #doctor_suisen {
 	display: flex;
 	justify-content: space-between;
@@ -200,7 +203,7 @@ main {
 }
 
 #doctor_test {
-/	align-self: flex-end;
+	/ align-self: flex-end;
 }
 
 #doctor_text h3 {
@@ -247,10 +250,8 @@ main {
 	margin-bottom: 8%;
 }
 
-.point_and_media {
-	display: flex;
+.dot_text {
 	justify-content: flex-end;
-	align-items: center;
 	margin-bottom: 4%;
 }
 
@@ -312,7 +313,7 @@ main {
 	flex-direction: column;
 	justify-content: center;
 	margin: 0 auto;
-		padding: 5% 0 5%;
+	padding: 5% 0 5%;
 }
 
 #goryoukin {

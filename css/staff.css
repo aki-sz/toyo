@@ -1,0 +1,121 @@
+@charset "utf-8";
+
+/* スタッフ紹介 */
+.staff_box {
+	width: 65vw;
+	margin: 0 auto;
+}
+
+.staff_box h3 {
+	margin-top: 2%;
+	margin-bottom: 6%;
+	font-size: 2rem;
+}
+
+.staff_box h3 span {
+	font-size: 1.4rem;
+}
+
+.staff_info {
+	display: flex;
+	margin-bottom: 8%;
+}
+
+.pic_box {
+	margin: 2% 17% 0 3%;
+	position: relative;
+}
+
+.staff_pic {
+	width: 18vw;
+	position: relative;
+	z-index: 100;
+}
+
+#box_image_park {
+	aspect-ratio: 64 / 91;
+	width: 18vw;
+	background: #FF811A;
+	position: absolute;
+	z-index: 80;
+	top: 10%;
+	right: 9%;
+}
+
+#box_image_park_border_one {
+	aspect-ratio: 64 / 91;
+	width: 18vw;
+	border: 3px solid #FF811A;
+	position: absolute;
+	z-index: 60;
+	bottom: 12%;
+	left: 11%;
+}
+
+#box_image_park_border_two {
+	aspect-ratio: 64 / 91;
+	width: 18vw;
+	border: 3px solid #FF811A;
+	position: absolute;
+	z-index: 60;
+	bottom: 9%;
+	left: 5%;
+}
+
+.staff_profile li {
+	font-size: 1.1rem;
+	margin-bottom: 5%;
+}
+
+.prof_koumoku {
+	color: white;
+	background: #FF8726;
+	width: fit-content;
+	padding: 0.2rem 0.4rem;
+	margin-bottom: 1%;
+}
+
+.prof_naiyou {
+	margin-left: 1.3rem;
+}
+
+.naiyou_img_box {
+	display: flex;
+}
+
+.message_naiyou_box {
+	width:60vw;
+}
+
+.message_naiyou {
+	width:40vw;
+	margin: 0 auto;
+	padding: 7% 0 7%
+}
+
+.message_naiyou h4 {
+	margin-bottom: 8%;
+	font-size: 2.3rem;
+}
+
+.message_naiyou p {
+	margin-bottom: 4%;
+	font-size: 1rem;
+	text-align: justify;
+}
+
+#inchou_ms_img {
+	width: 40vw;
+	background-image: url(../images/staff/inchou_ms.jpg);
+	background-size: cover;
+}
+
+#inchou_name {
+	margin: 0;
+	font-size: 1.9rem;
+	text-align: right;
+}
+
+#inchou_name span {
+	font-size: 1.3rem;
+}

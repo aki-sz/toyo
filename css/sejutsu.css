@@ -1,15 +1,11 @@
 @charset "utf-8";
 
 /* 施術 */
-#sejutsu {
-	background: #FFFBE6;
-}
-
 #sejutsu_box {
 	margin: 0 auto;
 	display: flex;
 	justify-content: space-between;
-	height: 73vh;
+	height: 76vh;
 }
 
 #sejutsu_box:nth-of-type(2n) {
@@ -69,14 +65,12 @@
 
 /* 料金 */
 #ryoukin {
-	background: #7B5544;
 	display: flex;
 	flex-direction: column;
 	padding: 10% 0 8%;
 }
 
 .ryoukin_box {
-	color: white;
 	display: flex;
 	justify-content: space-between;
 	margin: 0 auto;
@@ -193,9 +187,6 @@
 }
 
 .point_and_koumoku {
-	display: flex;
-	align-items: center;
-	height: fit-content;
 	margin-bottom: 9%;
 }
 
@@ -210,7 +201,6 @@
 
 /* 必ずお読みください */
 #kanarazu {
-	background: #FFFBE6;
 	padding: 5% 0 5%;
 }
 
@@ -225,8 +215,9 @@
 
 #kanarazu_text_box {
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
 	margin: 0 auto;
+	gap: 7%;
 }
 
 .kanarazu_text h4 {
@@ -235,8 +226,6 @@
 }
 
 .point_and_koumoku_kanarazu {
-	display: flex;
-	align-items: center;
 	margin-bottom: 6%;
 }
 
