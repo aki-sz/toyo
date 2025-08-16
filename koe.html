@@ -53,7 +53,7 @@
 						<div id="reservation_text">
 							<p id="header_goyoyaku">ご予約受付中</p>
 							<p id="header_tel">Tel. 0120-911-359</p>
-							<p id="header_uketsuke">受付時間:9:00～20:00/当日予約OK</p>
+							<p id="header_uketsuke">受付時間:9:00～20:00<span>/</span><br>当日予約OK</p>
 						</div>
 						<div id="reservation_icons">
 							<div id="icons_container">
@@ -67,15 +67,21 @@
 					</div>
 				</div>
 			</div>
+			<div id="hamburger" class="hamburger">
+				<span></span><span></span><span></span>
+			</div>
 		</header>
 		<main>
 			<h1 id="page_midashi">お客様の声</h1>
 			<div id="okyakusama_wrapper">
 				<p id="kansou">※お客様の感想であり、効果効能を保証するものではありません。</p>
-				<div id="okyakusama_box">
-					<div class="koe">
+				<div id="okyakusama_box" >
+					<div class="koe slide-bottom" data-plugin-options='{"offset":-500, "reverse":false}'>
 						<div class="gazou_box">
 							<p class="koe_gazou"><img src="images/koe/suzuki.webp"></p>
+							<div class="box_image_paper"></div>
+							<div class="box_image_paper_border_one"></div>
+							<div class="box_image_paper_border_two"></div>
 						</div>
 						<div class="koe_text">
 							<h3><span class="marker_line">施術から2ヶ月後には疲労感が軽減し、
@@ -105,9 +111,12 @@
 							</div>
 						</div>
 					</div>
-					<div class="koe">
+					<div class="koe slide-bottom" data-plugin-options='{"offset":-500, "reverse":false}'>
 						<div class="gazou_box">
 							<p class="koe_gazou"><img src="images/koe/toyama.webp"></p>
+							<div id="box_image_toyoama"></div>
+							<div id="box_image_toyoama_one"></div>
+							<div id="box_image_toyoama_two"></div>
 						</div>
 						<div class="koe_text">
 							<h3><span class="marker_line">週2回の施術で肩・首・背中の凝りが和らぎ、<br>胃の不快感も感じなくなりました。</span></h3>
@@ -135,9 +144,12 @@
 							</div>
 						</div>
 					</div>
-					<div class="koe">
+					<div class="koe slide-bottom" data-plugin-options='{"offset":-500, "reverse":false}'>
 						<div class="gazou_box">
 							<p class="koe_gazou"><img src="images/koe/mizutani.webp"></p>
+							<div class="box_image_paper"></div>
+							<div class="box_image_paper_border_one"></div>
+							<div class="box_image_paper_border_two"></div>
 						</div>
 						<div class="koe_text">
 							<h3><span class="marker_line">施術を受けて徐々に体調が良くなり、
@@ -160,9 +172,12 @@
 							</div>
 						</div>
 					</div>
-					<div class="koe">
+					<div class="koe slide-bottom" data-plugin-options='{"offset":-500, "reverse":false}'>
 						<div class="gazou_box">
 							<p class="koe_gazou"><img src="images/koe/yamada.webp"></p>
+							<div class="box_image_paper"></div>
+							<div class="box_image_paper_border_one"></div>
+							<div class="box_image_paper_border_two"></div>
 						</div>
 						<div class="koe_text">
 							<h3><span class="marker_line">施術を続けるうちにお腹の調子が良くなり、<br>車や電車に乗る際も不安がありません。</span></h3>
@@ -190,6 +205,13 @@
 				</div>
 				<div id="border_brown"></div>
 		</main>
+		<script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+		<script src="js/hmenu.js"></script>
+		<script src="js/jquery.fadethis.min.js" type="text/javascript"></script>
+		<script>
+			$(window).fadeThis();
+		</script>
+
 		<footer>
 			<div id="footer_container">
 				<div id="footer_contents">

@@ -53,7 +53,7 @@
 						<div id="reservation_text">
 							<p id="header_goyoyaku">ご予約受付中</p>
 							<p id="header_tel">Tel. 0120-911-359</p>
-							<p id="header_uketsuke">受付時間:9:00～20:00/当日予約OK</p>
+							<p id="header_uketsuke">受付時間:9:00～20:00<span>/</span><br>当日予約OK</p>
 						</div>
 						<div id="reservation_icons">
 							<div id="icons_container">
@@ -67,12 +67,15 @@
 					</div>
 				</div>
 			</div>
+			<div id="hamburger" class="hamburger">
+				<span></span><span></span><span></span>
+			</div>
 		</header>
 		<main>
 			<h1 id="page_midashi">施術/料金</h1>
 			<div id="sejutsu">
 				<div id="sejutsu_box">
-					<div class="sejutsu_section">
+					<div class="sejutsu_section slide-left" data-plugin-options='{"offset":-250, "reverse":false}'>
 						<h3>自律神経の乱れに特化した<br><span class="marker_line">「お腹ほぐし整体」</span></h3>
 						<p class="sejutsu_description">
 							東陽治療院では、自律神経の乱れの原因は内臓の疲れと考え、腹診術を主とした、江戸時代前期の鍼医「御園夢分斎」の打診術と東洋医学の考え方を整体術に落とし込んだ、まったく新しい施術法を受けられます。
@@ -85,7 +88,7 @@
 					<p id="hogushi_image"></p>
 				</div>
 				<div id="sejutsu_box">
-					<div class="sejutsu_section">
+					<div class="sejutsu_section slide-right" data-plugin-options='{"offset":-200, "reverse":false}'>
 						<h3><span class="marker_line">お客様一人ひとり</span>に合わせた施術</h3>
 						<p class="sejutsu_description">
 							内臓の疲れの原因を、19年の臨床経験の中で見えてきた5つのタイプに分類。一人ひとりに合った施術をいたします。
@@ -94,7 +97,7 @@
 					<p id="hitorihitori_image"></p>
 				</div>
 				<div id="sejutsu_box">
-					<div class="sejutsu_section">
+					<div class="sejutsu_section slide-left" data-plugin-options='{"offset":-200, "reverse":false}'>
 						<h3>再発を防ぐ<br><span class="marker_line">自宅でできるセルフケア</span>を伝授</h3>
 						<p class="sejutsu_description">
 							当院では、再発を防ぐためのセルフケアも指導いたします。
@@ -104,7 +107,7 @@
 				</div>
 			</div><!--sejutsu-->
 			<div id="ryoukin" class="back_brown">
-				<div class="ryoukin_box">
+				<div class="ryoukin_box slide-bottom" data-plugin-options='{"offset":-250, "reverse":false}'">
 					<div class="ryoukin_image">
 						<p><img src="images/chiryouin_top.jpg"></p>
 						<div id="box_image_ryoukin_border_one"></div>
@@ -120,7 +123,7 @@
 						<p id="nikaime">2回目以降 : 7,260円<span id="zeikomi_nikaime">（税込）</span></p>
 					</div>
 				</div>
-				<div class="ryoukin_box">
+				<div class="ryoukin_box slide-bottom" data-plugin-options='{"offset":-250, "reverse":false}'>
 					<div class="ryoukin_image">
 						<p><img src="images/sejutsu/room.jpg"></p>
 						<div id="box_image_goyoyaku_border_one"></div>
@@ -146,7 +149,7 @@
 			<div id="kanarazu">
 				<div id="kanarazu_wrapper">
 					<h3><span class="marker_line">ご予約前に必ずお読みください</span></h3>
-					<div id="kanarazu_text_box">
+					<div id="kanarazu_text_box" class="slide-bottom" data-plugin-options='{"offset":-300, "reverse":false}'>
 						<div class="kanarazu_text">
 							<h4>こんな方には当院の施術は<br>おすすめできません。</h4>
 							<div class="dot_text point_and_koumoku_kanarazu">
@@ -182,6 +185,12 @@
 			</div><!--kanarazu-->
 			<div id="border_brown"></div>
 		</main>
+		<script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+		<script src="js/hmenu.js"></script>
+		<script src="js/jquery.fadethis.min.js" type="text/javascript"></script>
+		<script>
+			$(window).fadeThis();
+		</script>
 		<footer>
 			<div id="footer_container">
 				<div id="footer_contents">

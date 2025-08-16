@@ -21,6 +21,7 @@
 	<link
 		href="https://fonts.googleapis.com/css2?family=Klee+One:wght@600&family=Zen+Antique&family=Zen+Kaku+Gothic+New:wght@400;500&display=swap"
 		rel="stylesheet">
+	<link href="css/vegas.min.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
@@ -28,7 +29,8 @@
 		<header>
 			<div id="header_contents">
 				<div id="logo_and_nav">
-					<p id="header_logo"><a href="index.html"><img src="images/logo_toyo.png" alt="鎌ヶ谷市の整体・鍼灸「東陽治療院」自律神経専門"></a></p>
+					<p id="header_logo"><a href="index.html"><img src="images/logo_toyo.png"
+								alt="鎌ヶ谷市の整体・鍼灸「東陽治療院」自律神経専門"></a></p>
 					<div id="navigation_row">
 						<nav class="navigation">
 							<li>
@@ -52,22 +54,27 @@
 						<div id="reservation_text">
 							<p id="header_goyoyaku">ご予約受付中</p>
 							<p id="header_tel">Tel. 0120-911-359</p>
-							<p id="header_uketsuke">受付時間:9:00～20:00/当日予約OK</p>
+							<p id="header_uketsuke">受付時間:9:00～20:00<span>/</span><br>当日予約OK</p>
 						</div>
 						<div id="reservation_icons">
 							<div id="icons_container">
-								<p class="res_ico"><a href="#"><img src="images/LINE_Brand_icon_RGB.svg" alt="LINE予約24時間受付OK"></a></p>
-								<p class="res_ico"><a href="#"><img src="images/mail_2.svg" 　alt="メール予約24時間受付OK"></a></p>
+								<p class="res_ico"><a href="#"><img src="images/LINE_Brand_icon_RGB.svg"
+											alt="LINE予約24時間受付OK"></a></p>
+								<p class="res_ico"><a href="#"><img src="images/mail_2.svg" 　alt="メール予約24時間受付OK"></a>
+								</p>
 							</div>
 							<p id="header_twentyfour">(24時間受付)</p>
 						</div>
 					</div>
 				</div>
 			</div>
+			<div id="hamburger" class="hamburger">
+				<span></span><span></span><span></span>
+			</div>
 		</header>
 		<main>
 			<div id="top_eyecatch">
-				<p id="top_image"></p>
+				<!--p id="top_image"></p-->
 				<div id="top_text">
 					<h2>自律神経の悩みは、<span>お腹のコリ</span>から。</h2>
 					<h1>のべ12万人が来院する、鎌ケ谷市の自律神経専門院</h1>
@@ -76,7 +83,8 @@
 			<div id="onayami">
 				<div id="konoyouna">
 					<h3><span class="marker_line">このようなお悩みはありませんか？</span></h3>
-					<div id="check_and_face">
+					<div id="check_and_face" class="slide-bottom"
+						data-plugin-options='{"offset":-250, "reverse":false}'>
 						<li>
 							<ul>
 								<p class="check_mark"><img src="images/check.svg"></p>
@@ -106,9 +114,11 @@
 						<p id="face_suffer"><img src="images/face_suffer.svg" alt="このようなお悩みはありませんか？"></p>
 					</div>
 				</div><!--konoyouna-->
-				<h3 id="jitsuha">それ、実は<span class="marker_line">「自律神経の乱れ」</span>が原因なんです。</h3>
-				<p id="arrow_top"><img src="images/arrow_top.png" alt="それ、実は「自律神経の乱れ」が原因なんです。"></p>
-				<div id="kaizen">
+				<div id="jitsuha_arrow" class="slide-bottom" data-plugin-options='{"offset":-200, "reverse":false}'>
+					<h3 id="jitsuha">それ、実は<span class="marker_line">「自律神経の乱れ」</span>が原因なんです。</h3>
+					<p id="arrow_top"><img src="images/arrow_top.png" alt="それ、実は「自律神経の乱れ」が原因なんです。"></p>
+				</div>
+				<div id="kaizen" class="slide-bottom" data-plugin-options='{"offset":-300, "reverse":false}'>
 					<p id="face_smile"><img src="images/face_smile.svg" alt="改善のカギとなるのは「自律神経」"></p>
 					<div id="kaizen_text">
 						<h3>改善のカギとなるのは<span class="marker_line">「自律神経」</span></h3>
@@ -121,7 +131,7 @@
 			</div><!--onayami-->
 			<div id="onakahogushi">
 				<div id="onaka_text_bg" class="back_brown">
-					<div id="onaka_text">
+					<div id="onaka_text" class="slide-bottom" data-plugin-options='{"offset":-300, "reverse":false}'>
 						<h3>自律神経の乱れを改善に導く<br>当院の<span class="marker_line">「お腹ほぐし整体」</span></h3>
 						<p class="onaka_description">当院の整体は、少し特殊です。一般の整骨院・整体院でする施術と違い、痛みや不調の根本的な原因となった自律神経の乱れにアプローチします。
 						</p>
@@ -135,7 +145,7 @@
 				</div>
 			</div><!--onakahogushi-->
 			<div id="doctor_media">
-				<div id="doctor_suisen">
+				<div id="doctor_suisen" class="slide-bottom" data-plugin-options='{"offset":-300, "reverse":false}'>
 					<div id="doctor_image">
 						<p><img src="images/shinoura.png" alt="医師も推薦する施術法"></p>
 						<div id="box_image_shinoura"></div>
@@ -154,7 +164,7 @@
 						</div>
 					</div>
 				</div><!--doctor_suisen-->
-				<div id="media_syoukai">
+				<div id="media_syoukai" class="slide-bottom" data-plugin-options='{"offset":-300, "reverse":false}'>
 					<div id="media_text">
 						<h3>当院で使用している施術法は<br><span class="marker_line">多数のメディア</span>に掲載されています</h3>
 						<div class="dot_text">
@@ -191,7 +201,8 @@
 			<div id="top_reservation">
 				<div id="ryoukin_image">
 				</div>
-				<div id="reservation_top_text">
+				<div id="reservation_top_text" class="slide-bottom"
+					data-plugin-options='{"offset":-300, "reverse":false}'>
 					<h3 id="goryoukin">ご料金</h3>
 					<p id="hp_karano">HPからのご予約で</p>
 					<h3 id="syokai_ryoukin"><span class="marker_line">初回 : 3,960円<span
@@ -204,11 +215,49 @@
 					<p id="top_uketsuke">受付時間:9:00～20:00/当日予約OK</p>
 					<p id="top_twentyfour">LINE/メールでは24時間予約受付中</p>
 					<div id="icons_container_top">
-						<p class="res_ico_top"><a href="#"><img src="images/LINE_Brand_icon_RGB.svg" alt="LINE予約24時間受付OK"></a></p>
+						<p class="res_ico_top"><a href="#"><img src="images/LINE_Brand_icon_RGB.svg"
+									alt="LINE予約24時間受付OK"></a></p>
 						<p class="res_ico_top"><a href="#"><img src="images/mail_2.svg" alt="メール予約24時間受付OK"></a></p>
 					</div>
 				</div>
 		</main>
+		<script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+		<script src="js/hmenu.js"></script>
+		<script src="js/vegas.min.js"></script>
+		<script>
+			$('#header_top').vegas({
+				timer: false,
+				slides: [
+					{ src: 'images/top_image.jpg' },
+					{ src: 'images/menu/melon.jpg' },
+					{ src: 'images/menu/kurowassan.jpg' },
+					{ src: 'images/menu/syokupan.jpg' },
+					{ src: 'images/menu/batard.jpg' },
+				],
+				transition: 'fade',
+				animation: 'kenburns'
+			});	
+		</script>
+
+		<script src="js/jquery.fadethis.min.js" type="text/javascript"></script>
+		<script>
+			$(window).fadeThis();
+		</script>
+		<script src="js/vegas.min.js"></script>
+		<script>
+			$('#top_eyecatch').vegas({
+				timer: false,
+				slides: [
+					{ src: 'images/top01.jpg' },
+					{ src: 'images/machiai.jpg' },
+					{ src: 'images/top_park.jpg' },
+					{ src: 'images/chiryouin_top.jpg' },
+				],
+				transition: 'fade',
+				animation: 'kenburns'
+			});	
+		</script>
+
 		<footer>
 			<div id="footer_container">
 				<div id="footer_contents">
