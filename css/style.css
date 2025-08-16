@@ -44,6 +44,18 @@ header {
 	z-index: 9999;
 }
 
+@media screen and (orientation: portrait) and (max-width: 1024px) {
+	header {
+		height: 8vh;
+	}
+}
+
+@media screen and (orientation: portrait) and (max-width: 540px) {
+	header {
+		height: 11vh;
+	}
+}
+
 #header_contents {
 	/ width: 85vw;
 	/ margin: 0 auto;
@@ -62,8 +74,20 @@ header {
 	font-size: clamp(0.7rem, 1.5vw, 1.2rem);
 }
 
+@media screen and (orientation: portrait) and (max-width: 540px) {
+	#logo_and_nav {
+		width: 98vw;
+	}
+}
+
 #header_logo {
 	width: 15vw;
+}
+
+@media screen and (orientation: portrait) and (max-width: 540px) {
+	#header_logo {
+		width: 40vw;
+	}
 }
 
 #navigation_row {
@@ -71,6 +95,12 @@ header {
 	flex-direction: column;
 	align-items: center;
 	gap: 20%;
+}
+
+@media screen and (orientation: portrait) and (max-width: 540px) {
+	#navigation_row {
+		display: none;
+	}
 }
 
 .navigation li {
@@ -89,6 +119,12 @@ header {
 	color: white;
 }
 
+@media screen and (orientation: portrait) and (max-width: 540px) {
+	#reservation_header {
+		display: none;
+	}
+}
+
 #reservation_container {
 	display: flex;
 	justify-content: center;
@@ -100,12 +136,12 @@ header {
 }
 
 #header_goyoyaku {
-	font-size: 1.3rem;
+	font-size: clamp(1rem, 1.6vw, 1.3rem);
 	font-weight: 500;
 }
 
 #header_tel {
-	font-size: 1.2rem;
+	font-size: clamp(0.9rem, 1.5vw, 1.2rem);
 	font-weight: 500;
 }
 
@@ -114,6 +150,21 @@ header {
 	font-size: 0.7rem;
 	font-weight: 400;
 }
+
+#header_uketsuke br {
+	display: none;
+}
+
+@media screen and (orientation: portrait) and (max-width: 1024px) {
+	#header_uketsuke br {
+		display: block;
+	}
+
+		#header_uketsuke span {
+		display: none;
+	}
+}
+
 
 #reservation_icons {
 	display: flex;
@@ -126,12 +177,19 @@ header {
 	display: flex;
 	gap: 5%;
 	width: 7vw;
+	min-width: 100px;
 }
 
 /* フッター */
 footer {
 	height: 40vh;
 	background: #FFFBE6;
+}
+
+@media screen and (orientation: portrait) and (max-width: 1024px) {
+	footer {
+		height: 20vh;
+	}
 }
 
 #footer_container {
@@ -142,6 +200,7 @@ footer {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
+	font-size: clamp(0.7rem, 1.2vw, 1rem);
 }
 
 #footer_contents {
@@ -235,12 +294,18 @@ main {
 	font-size: 1.7rem;
 }
 
+@media screen and (orientation: portrait) and (max-width: 1024px) {
+	#page_midashi {
+		height: 7vh;
+	}
+}
+
 /* ドット */
 .square_point {
 	aspect-ratio: 1 / 1;
 	background-color: #FF811A;
 	width: 10px;
-	height: 10px;	
+	height: 10px;
 }
 
 .dot_text {
@@ -251,7 +316,7 @@ main {
 
 /* 見出し */
 h3 {
-	font-size: 2.4rem;
+	font-size: clamp(1.8rem, 2.8vw, 2.4rem);
 	width: fit-content;
 }
 
@@ -266,8 +331,72 @@ h3 {
 	padding: 2%;
 	border-radius: 10px;
 	align-self: center;
+	font-size: clamp(0.8rem, 1.2vw, 1rem);
 }
 
 #sejutsu_button:hover {
 	text-decoration: none;
 }
+
+/* ハンバーガー */
+@media screen and (orientation: portrait) and (max-width: 540px) {
+	.hamburger {
+		position: absolute;
+		top: 25px;
+		right: 25px;
+		cursor: pointer;
+		width: 32px;
+		height: 24px;
+		z-index: 10;
+	}
+
+	.hamburger span {
+		/*3本の線を作る*/
+		transition: all .3s;
+		position: absolute;
+		height: 2px;
+		background-color: #7B5544;
+		width: 100%;
+		z-index: 10;
+	}
+
+	.hamburger span:nth-of-type(1) {
+		/*上の線の位置*/
+		top: 4px;
+	}
+
+	.hamburger span:nth-of-type(2) {
+		/*真ん中の線の位置*/
+		top: 12px;
+	}
+
+	.hamburger span:nth-of-type(3) {
+		/*下の線の位置*/
+		top: 20px;
+	}
+
+	.hamburger.open span:nth-of-type(1) {
+		/*openのとき、上の線を右斜めにする*/
+		top: 10px;
+		transform: translateY(6px) rotate(-33deg);
+	}
+
+	.hamburger.open span:nth-of-type(2) {
+		/*真ん中の線を消す*/
+		opacity: 0;
+	}
+
+	.hamburger.open span:nth-of-type(3) {
+		/*下の線を左斜めにする*/
+		top: 22px;
+		transform: translateY(-6px) rotate(33deg);
+	}
+}
+
+@media screen and (max-width: 320px) {
+	.hamburger {
+		top: 18px;
+		right: 15px;
+	}
+}
+

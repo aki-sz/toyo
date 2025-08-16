@@ -11,7 +11,7 @@ html {
 }
 
 #question_wrapper h2 {
-	font-size: 1.4rem;
+	font-size: clamp(1.1rem, 1.6vw, 1.4rem);
 	padding: 2% 0 2%;
 }
 
@@ -40,7 +40,7 @@ html {
 }
 
 #question_ichiran {
-	font-size: 1.1rem;
+	font-size: clamp(0.9rem, 1.3vw, 1.1rem);
 	text-wrap: nowrap;
 }
 
@@ -80,16 +80,15 @@ html {
 .answer h3 {
 	font-size: 2rem;
 	margin-bottom: 6%;
-	line-height: 2.5rem;
+	line-height: clamp(2.1rem, 2.9vw, 2.5rem);
 }
 
 .answer a:hover {
 	text-decoration: none;
 }
 
-
 .answer_text {
-	font-size: 1.2rem;
+	font-size: clamp(1.1rem, 1.5vw, 1.2rem);
 	margin-bottom: 6%;
 }
 
@@ -99,4 +98,11 @@ html {
 	border-radius: 10px;
 	width: fit-content;
 	padding: 2%;
+	font-size: clamp(0.8rem, 1.2vw, 1rem);
+}
+
+@media screen and (orientation: portrait) and (max-width: 1024px) {
+	.question_title br {
+		display: none;
+	}
 }

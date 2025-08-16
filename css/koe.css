@@ -2,13 +2,14 @@
 
 /* お客様の声 */
 #okyakusama_wrapper {
-	width: 70vw;
+	width: 75vw;
 	margin: 0 auto;
 }
 
 #kansou {
 	margin-top: 2%;
-	margin-bottom: 2%;
+	margin-bottom: 7%;
+	font-size: clamp(0.8rem, 1.2vw, 1rem);
 }
 
 .koe {
@@ -19,6 +20,7 @@
 
 .gazou_box {
 	position: relative;
+	margin-top: 3%;
 }
 
 .koe_gazou {
@@ -27,20 +29,86 @@
 	z-index: 100;
 }
 
+.box_image_paper {
+	aspect-ratio: 128 / 181;
+	width: 18vw;
+	background: #FF811A;
+	position: absolute;
+	z-index: 80;
+	top: 3%;
+	right: 10%;
+	max-width: 309px;
+}
+
+.box_image_paper_border_one {
+	aspect-ratio: 128 / 181;
+	width: 18vw;
+	border: 2px solid #FF811A;
+	position: absolute;
+	z-index: 60;
+	top: -2%;
+	left: 6%;
+	max-width: 309px;
+}
+
+.box_image_paper_border_two {
+	aspect-ratio: 128 / 181;
+	width: 18vw;
+	border: 2px solid #FF811A;
+	position: absolute;
+	z-index: 60;
+	top: -5%;
+	left: 12%;
+	max-width: 309px;
+}
+
+#box_image_toyoama {
+	aspect-ratio: 4 / 3;
+	width: 18vw;
+	background: #FF811A;
+	position: absolute;
+	z-index: 80;
+	top: 3%;
+	right: 10%;
+	max-width: 309px;
+}
+
+#box_image_toyoama_one {
+	aspect-ratio: 4 / 3;
+	width: 18vw;
+	border: 2px solid #FF811A;
+	position: absolute;
+	z-index: 60;
+	top: -2%;
+	left: 6%;
+	max-width: 309px;
+}
+
+#box_image_toyoama_two {
+	aspect-ratio: 4 / 3;
+	width: 18vw;
+	border: 2px solid #FF811A;
+	position: absolute;
+	z-index: 60;
+	top: -5%;
+	left: 12%;
+	max-width: 309px;
+}
+
 .koe_text h3 {
-	font-size: 1.6rem;
+	font-size: clamp(1.1rem, 1.9vw, 1.6rem);
 	line-height: 2.3rem;
 }
 
 .name_koe {
 	font-family: "Klee One";
-	font-size: 1.1rem;
+	font-size: clamp(0.9rem, 1.3vw, 1.1rem);
 	margin-top: 1%;
 	margin-bottom: 2%;
 }
 
 .koe_shitsumon {
-	font-size: 1.2rem;
+	font-size: clamp(1.1rem, 1.5vw, 1.2rem);
 	margin-bottom: 1%;
 }
 
@@ -50,4 +118,8 @@
 
 .koe_q_a:last-child{
 	margin-bottom: 0;
+}
+
+.koe_koe_kaitou {
+	font-size: clamp(0.9rem, 1.3vw, 1.1rem);
 }

@@ -1,0 +1,68 @@
+@charset "utf-8";
+
+#access_box {
+	width: 70vw;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	padding: 4% 0 3%;
+	font-size: clamp(0.8rem, 1.2vw, 1rem);
+}
+
+@media screen and (orientation: portrait) and (max-width: 1024px) {
+	#access_box {
+		flex-direction: column;
+		padding: 5% 0 9%;
+	}
+}
+
+iframe {
+	margin-left: 2%;
+}
+
+@media screen and (orientation: portrait) and (max-width: 1024px) {
+	iframe {
+		margin-left: 0;
+	}
+}
+
+#access_contents {
+	margin-bottom: 8%;
+	height: 90%;
+}
+
+#access_info {
+	display: grid;
+	width: 35vw;
+	grid-template-columns: 1fr, 1fr;
+	grid-template-rows: 1fr, 1fr;
+	gap: 10%;
+}
+
+#access_address {
+	grid-column-start: 1;
+	grid-column-end: 2;
+	grid-row-start: 1;
+	grid-row-end: 2;
+}
+
+.access_time {
+	grid-column-start: 2;
+	grid-column-end: 3;
+	grid-row-start: 1;
+	grid-row-end: 2;
+}
+
+.access_koutsuu {
+	grid-column-start: 1;
+	grid-column-end: 2;
+	grid-row-start: 2;
+	grid-row-end: 3;
+}
+
+.access_close {
+	grid-column-start: 2;
+	grid-column-end: 3;
+	grid-row-start: 2;
+	grid-row-end: 3;
+}

@@ -7,6 +7,7 @@ main {
 /* トップ画像 */
 #top_eyecatch {
 	position: relative;
+	height: 87vh;
 }
 
 #top_image {
@@ -16,12 +17,18 @@ main {
 	background-position: 0, 100%;
 }
 
+@media screen and (orientation: portrait) and (max-width: 1024px) {
+	#top_eyecatch {
+		height: 40vh;
+	}
+}
+
 #top_text {
 	color: #4D322A;
 }
 
 #top_text h2 {
-	font-size: clamp(2.4rem, 3.3vw, 2.9rem);
+	font-size: clamp(2.2rem, 3.3vw, 2.9rem);
 	position: absolute;
 	top: 74%;
 	left: 6%;
@@ -30,7 +37,7 @@ main {
 }
 
 #top_text h1 {
-	font-size: clamp(1.8rem, 2.7vw, 2.3rem);
+	font-size: clamp(1.5rem, 2.7vw, 2.3rem);
 	position: absolute;
 	top: 85%;
 	left: 37%;
@@ -52,7 +59,7 @@ main {
 
 #konoyouna {
 	color: white;
-	width: 65vw;
+	width: 70vw;
 	margin: 0 auto;
 	padding-top: 6%;
 }
@@ -70,10 +77,9 @@ main {
 #konoyouna li {
 	display: flex;
 	flex-direction: column;
-	font-size: 1.3rem;
+	font-size: clamp(1.1rem, 1.6vw, 1.3rem);
 	gap: 1.3rem;
 	width: fit-content;
-
 }
 
 #konoyouna ul {
@@ -89,6 +95,16 @@ main {
 	display: inline;
 }
 
+@media screen and (max-width: 1024px) {
+	.nayami_top br {
+		display: none;
+	}
+}
+
+#face_suffer {
+	min-width: 150px;
+}
+
 #jitsuha {
 	margin: 15% auto 3%;
 	color: #7B5544;
@@ -96,7 +112,7 @@ main {
 
 #arrow_top {
 	margin: 0 auto 10%;
-	width: fit-content;
+	width: 50vw;
 }
 
 #kaizen {
@@ -108,7 +124,7 @@ main {
 }
 
 #kaizen_text {
-	width: 45vw;
+	width: 47vw;
 	padding-bottom: 10%;
 }
 
@@ -118,33 +134,34 @@ main {
 
 .kaizen_description {
 	margin-bottom: 5%;
-	font-size: 1.2rem;
+	font-size: clamp(1rem, 1.5vw, 1.2rem);
 }
 
 /* お腹ほぐし整体解説 */
 #onakahogushi {
 	display: flex;
+	width: 100%;
 }
 
 #onaka_text_bg {
-	width: 65vw;
+	width: 65%;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	align-items: flex-end;
+	align-items: center;
 	padding: 5% 0 5%;
 }
 
 #image_sejutsu {
-	width: 35vw;
+	width: 35%;
 	background-image: url(../images/top_park.jpg);
 	background-size: cover;
 	background-position: 50%, 0;
 }
 
 #onaka_text {
-	width: 51vw;
-	margin-right: 7%;
+	width: 47vw;
+/	margin-right: 7%;
 }
 
 #onaka_text h3 {
@@ -153,7 +170,7 @@ main {
 
 .onaka_description {
 	margin-bottom: 5%;
-	font-size: 1.2rem;
+	font-size: clamp(1rem, 1.5vw, 1.2rem);
 }
 
 /* 医師推薦&メディア紹介 */
@@ -200,17 +217,13 @@ main {
 	max-width: 309px;
 }
 
-#doctor_test {
-	/ align-self: flex-end;
-}
-
 #doctor_text h3 {
 	margin-bottom: 7%;
 }
 
 .doctor_description {
 	margin-bottom: 3%;
-	font-size: 1.2rem;
+	font-size: clamp(0.7rem, 1.5vw, 1.2rem);
 	text-wrap: nowrap;
 }
 
@@ -221,15 +234,15 @@ main {
 }
 
 #hospital {
-	font-size: 1.1rem;
+	font-size: clamp(0.7rem, 1.3vw, 1.1rem);
 }
 
 #doc_name {
-	font-size: 2.2rem;
+	font-size: clamp(1.5rem, 2.5vw, 2.2rem);
 }
 
 #doc_name span {
-	font-size: 1.1rem;
+	font-size: clamp(0.9rem, 1.3vw, 1.1rem);
 }
 
 #media_syoukai {
@@ -246,7 +259,7 @@ main {
 }
 
 #media_text h3 {
-	font-size: 2.3rem;
+	font-size: clamp(1.4rem, 2.7vw, 2.3rem);
 	margin-bottom: 8%;
 }
 
@@ -256,7 +269,7 @@ main {
 }
 
 .media_name {
-	font-size: 1.3rem;
+	font-size: clamp(1rem, 1.6vw, 1.3rem);
 	width: 24.5vw;
 }
 
@@ -313,7 +326,7 @@ main {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-/	margin: 0 auto;
+	/ margin: 0 auto;
 	padding: 5% 0 5%;
 }
 
@@ -325,7 +338,7 @@ main {
 }
 
 #hp_karano {
-	font-size: 1.5rem;
+	font-size: clamp(1.3rem, 1.7vw, 1.5rem);
 }
 
 #syokai_ryoukin {
@@ -333,40 +346,42 @@ main {
 }
 
 #zeikomi_syokai {
-	font-size: 1.8rem;
+	font-size: clamp(1.1rem, 2.1vw, 1.8rem);
 }
 
 #tsuujouji {
-	font-size: 1.1rem;
+	font-size: clamp(0.9rem, 1.3vw, 1.1rem);
 }
 
 #hp_mita {
-	font-size: 1.5rem;
+	font-size: clamp(1.1rem, 1.7vw, 1.5rem);
 	margin-bottom: 6%;
 }
 
 #nikaime {
-	font-size: 1.8rem;
+	font-size: clamp(1.1rem, 2.1vw, 1.8rem);
 	margin-bottom: 6%;
 }
 
 #zeikomi_nikaime {
-	font-size: 1.2rem;
+	font-size: clamp(0.7rem, 1.5vw, 1.2rem);
 }
 
 #top_goyoyaku {
-	font-size: 1.4rem;
+	font-size: clamp(1.1rem, 1.6vw, 1.4rem);
 }
 
 #top_tel {
-	font-size: 1.4rem;
+	font-size: clamp(1.1rem, 1.6vw, 1.4rem);
 }
 
 #top_uketsuke {
+	font-size: clamp(0.7rem, 1.2vw, 1rem);
 	margin-bottom: 4%;
 }
 
 #top_twentyfour {
+	font-size: clamp(0.7rem, 1.2vw, 1rem);
 	margin-bottom: 1%;
 }
 
@@ -374,4 +389,5 @@ main {
 	display: flex;
 	gap: 5%;
 	width: 8vw;
+	min-width: 100px;
 }
